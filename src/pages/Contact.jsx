@@ -15,6 +15,21 @@ function Contact() {
   function handleSubmit(event) {
     event.preventDefault()
     setSubmitted(true)
+    unction Contact() {
+  const [submitted, setSubmitted] = useState(false)
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    setSubmitted(true)
+  }
+  import { useState } from 'react'
+
+function Contact() {
+  const [submitted, setSubmitted] = useState(false)
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    setSubmitted(true)
   }
 yurutyuuu fu fusytyugfg
 yurutyuuu fu fusytyugfg
