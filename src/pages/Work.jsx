@@ -16,5 +16,11 @@ function Work() {
     </main>
   )
 }
+const projects = [
+  { number: '01', title: 'Kora Health', type: 'Digital health platform', year: '2025', category: 'Product / Strategy', image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1400&q=85', tone: 'project-lilac' },
+  { number: '02', title: 'Nuru Finance', type: 'Brand & product system', year: '2024', category: 'Brand / Digital', image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=85', tone: 'project-yellow' },
+  { number: '03', title: 'Saba House', type: 'Hospitality experience', year: '2024', category: 'Identity / Space', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85', tone: 'project-green' },
+  { number: '04', title: 'Kilimanjaro', type: 'Editorial art direction', year: '2023', category: 'Editorial / Culture', image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=85', tone: 'project-coral' },
+]
 
 export default Work
