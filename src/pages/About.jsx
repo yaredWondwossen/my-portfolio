@@ -1,29 +1,18 @@
-
-import { useEffect, useState } from "react";
-
-function About() {
-  const [showAlert, setShowAlert] = useState(true);
-
-  // Hide success message after 5 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowAlert(false);
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  return (
-    <section className="about">
-      <h1>About Us</h1>
-
-      {showAlert && (
-        <div className="success-message">
-          Your message has been sent successfully!
+function ProjectArtwork({ className }) {
+  if (className === 'sonder') {
+    return (
+      <div className="artwork artwork-sonder" aria-hidden="true">
+        <div className="sonder-sun" />
+        <div className="sonder-window">
+          <div className="window-top"><i /><i /><i /></div>
+          <div className="window-copy">
+            <span>STAY A LITTLE</span>
+            <strong>Somewhere<br />that feels like<br /><em>you.</em></strong>
+            <div className="window-button">Find your stay <ArrowIcon /></div>
+          </div>
+          <div className="window-photo" />
         </div>
-      )}
-    </section>
-  );
-}
-
-export default About;
+        <span className="artwork-note">A softer kind of stay</span>
+      </div>
+    )
+  }
