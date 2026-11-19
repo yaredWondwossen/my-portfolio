@@ -2,7 +2,23 @@ import { useState } from 'react'
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false)
+import { useState } from 'react'
 
+function Contact() {
+  const [submitted, setSubmitted] = useState(false)
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    setSubmitted(true)
+  }
+
+  function Contact() {
+  const [submitted, setSubmitted] = useState(false)
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    setSubmitted(true)
+  }
   
   }
   import { useState } from 'react'
