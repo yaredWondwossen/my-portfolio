@@ -1,105 +1,105 @@
+
 import { useState } from 'react'
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false)
-import { useState } from 'react'
-
-function Contact() {
-  const [submitted, setSubmitted] = useState(false)
 
   function handleSubmit(event) {
     event.preventDefault()
     setSubmitted(true)
   }
 
-  function Contact() {
-  const [submitted, setSubmitted] = useState(false)
+  return (
+    <main className="page-pad inner-page contact-page">
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-  }
-  
-  }
-  import { useState } from 'react'
+      <div className="page-intro">
+        <p className="eyebrow">04 — Contact</p>
 
-function Contact() {
-  const [submitted, setSubmitted] = useState(false)
+        <h1>
+          Have something <em>in mind?</em>
+        </h1>
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-    unction Contact() {
-  const [submitted, setSubmitted] = useState(false)
+        <p className="page-lede">
+          Tell me a little about what you're working on.
+          I'll get back to you within a few days.
+        </p>
+      </div>
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-  }
-  import { useState } from 'react'
+      <div className="contact-layout">
 
-function Contact() {
-  const [submitted, setSubmitted] = useState(false)
+        <form className="contact-form" onSubmit={handleSubmit}>
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-  }
+          <label>
+            Name
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </label>
 
-  function Contact() {
-  const [submitted, setSubmitted] = useState(false)
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </label>
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-  }
-  import { useState } from 'react'
+          <label>
+            Tell me about it
+            <textarea
+              name="message"
+              placeholder="A few words about the project..."
+              rows="5"
+              required
+            />
+          </label>
 
-function Contact() {
-  const [submitted, setSubmitted] = useState(false)
+          <button className="submit-button" type="submit">
+            {submitted ? 'Message sent ✓' : 'Send inquiry ↗'}
+          </button>
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-    unction Contact() {
-  const [submitted, setSubmitted] = useState(false)
+        </form>
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-  }
-  import { useState } from 'react'
+        <aside className="contact-aside">
 
-function Contact() {
-  const [submitted, setSubmitted] = useState(false)
+          <p className="section-label">Elsewhere</p>
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-  }
-    import { useState } from 'react'
+          <a href="mailto:hello@mikael.studio">
+            hello@mikael.studio ↗
+          </a>
 
-function Contact() {
-  const [submitted, setSubmitted] = useState(false)
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn ↗
+          </a>
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-  }
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub ↗
+          </a>
 
-  function Contact() {
-  const [submitted, setSubmitted] = useState(false)
+          <div className="availability">
+            <span className="status-dot" />
+            Currently booking for Q2 2026
+          </div>
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-  }
-  import { useState } from 'react'
-  
-  
-yurutyuuu fu fusytyugfg
-yurutyuuu fu fusytyugfg
-  return <main className="page-pad inner-page contact-page"><div className="page-intro"><p className="eyebrow">04 — Contact</p><h1>Have something <em>in mind?</em></h1><p className="page-lede">Tell me a little about what you&apos;re working on. I&apos;ll get back to you within a few days.</p></div><div className="contact-layout"><form className="contact-form" onSubmit={handleSubmit}><label>Name<input type="text" name="name" placeholder="Your name" required /></label><label>Email<input type="email" name="email" placeholder="you@example.com" required /></label><label>Tell me about it<textarea name="message" placeholder="A few words about the project..." rows="5" required /></label><button className="submit-button" type="submit">{submitted ? 'Message sent ✓' : 'Send inquiry ↗'}</button></form><aside className="contact-aside"><p className="section-label">Elsewhere</p><a href="mailto:hello@mikael.studio">hello@mikael.studio ↗</a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com" target="_blank" rel="noreferrer">GitHub ↗</a><div className="availability"><span className="status-dot" />Currently booking for Q2 2026</div></aside></div></main>
+        </aside>
 
-hgkhgh bvjhkg mjgk
+      </div>
+
+    </main>
+  )
+}
+
 export default Contact
