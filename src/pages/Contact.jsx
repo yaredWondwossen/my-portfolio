@@ -6,7 +6,22 @@ function Contact() {
 
   function handleSubmit(event) {
     event.preventDefault()
+
+    const form = event.target
+    const formData = new FormData(form)
+
+    const name = formData.get('name')
+    const email = formData.get('email')
+    const message = formData.get('message')
+
+    console.log({
+      name,
+      email,
+      message
+    })
+
     setSubmitted(true)
+    form.reset()
   }
 
   return (
@@ -27,41 +42,52 @@ function Contact() {
 
       <div className="contact-layout">
 
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form
+          className="contact-form"
+          onSubmit={handleSubmit}
+        >
 
-          <label>
-            Name
-            <input
-              type="text"
-              name="name"
-              placeholder="Your name"
-              required
-            />
-          </label>
+          <label htmlFor="name">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+          />
 
-          <label>
-            Email
-            <input
-              type="email"
-              name="email"
-              placeholder="you@example.com"
-              required
-            />
-          </label>
+          <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
 
-          <label>
+          <label htmlFor="message">
             Tell me about it
-            <textarea
-              name="message"
-              placeholder="A few words about the project..."
-              rows="5"
-              required
-            />
           </label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="A few words about the project..."
+            rows="5"
+            required
+          />
 
-          <button className="submit-button" type="submit">
-            {submitted ? 'Message sent ✓' : 'Send inquiry ↗'}
+          <button
+            className="submit-button"
+            type="submit"
+          >
+            Send inquiry ↗
           </button>
+
+          {submitted && (
+            <p className="success-message" role="status">
+              Thank you! Your message has been submitted.
+            </p>
+          )}
 
         </form>
 
@@ -76,7 +102,7 @@ function Contact() {
           <a
             href="https://www.linkedin.com"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             LinkedIn ↗
           </a>
@@ -84,14 +110,14 @@ function Contact() {
           <a
             href="https://github.com"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             GitHub ↗
           </a>
 
           <div className="availability">
             <span className="status-dot" />
-            Currently booking for Q2 2026
+            Currently available for projects
           </div>
 
         </aside>
