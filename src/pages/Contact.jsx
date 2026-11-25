@@ -77,7 +77,17 @@ function Contact() {
           />
 
           <button
-            className="submit-button"
+            className="submit-button".
+          .....
+          .....
+          .
+          ..
+          .
+          .
+
+        .
+
+          ..
             type="submit"
           >
             Send inquiry ↗
