@@ -128,4 +128,57 @@ function Contact() {
   )
 }
 
-export default Contact
+export 
+.contact-page {
+  background-color: #142D4E;
+  color: #FFFFFF;
+  min-height: 100vh;
+}
+
+.contact-page .page-lede {
+  color: #CBD5E1;
+}
+
+.contact-page .contact-form label {
+  color: #FFFFFF;
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+  background-color: #203D5E;
+  color: #FFFFFF;
+  border: 1px solid #49627E;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.contact-page .contact-form input::placeholder,
+.contact-page .contact-form textarea::placeholder {
+  color: #B0BDCC;
+}
+
+.contact-page .submit-button {
+  background-color: #FFFFFF;
+  color: #142D4E;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-page .submit-button:hover {
+  background-color: #CBD5E1;
+}
+
+.contact-page .contact-aside a {
+  color: #FFFFFF;
+}
+
+.contact-page .availability {
+  color: #CBD5E1;
+}
+
+.contact-page .success-message {
+  color: #86EFAC;
+}
+ Contact
