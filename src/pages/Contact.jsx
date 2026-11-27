@@ -45,7 +45,13 @@ function Contact() {
         <form
           className="contact-form"
           onSubmit={handleSubmit}
-        >
+        >          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+          />
           <label htmlFor="email">Email</label>
           <input
             id="email"
